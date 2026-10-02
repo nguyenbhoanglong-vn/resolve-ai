@@ -32,7 +32,7 @@ function App(){
                     AI-powered support ticket management
                </p>
 
-               {ticket.map(ticket => (
+               {tickets.map(ticket => (
                     <div key={ticket.id}>
                          <h3>{ticket.title}</h3>
 
