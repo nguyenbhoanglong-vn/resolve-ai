@@ -32,7 +32,7 @@ def get_tickets(
      db: Session = Depends(get_db)
 ):
      return db.query(Ticket).order_by(
-          Ticket.created_at.desc()
+          Ticket.create_at.desc()
      ).all()
 
 @router.get("/{ticket_id}")
